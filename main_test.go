@@ -64,7 +64,7 @@ func TestRun(t *testing.T) {
 		},
 		{
 			name:     "failTimeout",
-			proj:     "./testdata/toolFmtErr",
+			proj:     "./testdata/tool",
 			out:      "",
 			expErr:   context.DeadlineExceeded,
 			setupGit: false,
