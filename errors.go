@@ -6,8 +6,8 @@ import (
 )
 
 var (
-	ErrValidatoin = errors.New("validatoin failed")
-	ErrSignal     = errors.New("Received signal")
+	ErrValidatoin = errors.New("validation failed")
+	ErrSignal     = errors.New("received signal")
 )
 
 type stepErr struct {

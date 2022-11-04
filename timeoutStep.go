@@ -6,6 +6,8 @@ import (
 	"time"
 )
 
+const TIMEOUT_DURATION = 60
+
 type timeoutStep struct {
 	step
 	timeout time.Duration
@@ -19,7 +21,7 @@ func newTimeoutStep(name, exe, message, proj string, args []string, timeout time
 	s.timeout = timeout
 
 	if s.timeout == 0 {
-		s.timeout = 30 * time.Second
+		s.timeout = 60 * time.Second
 	}
 
 	return s
